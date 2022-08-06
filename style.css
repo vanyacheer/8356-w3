@@ -48,36 +48,117 @@ table {
 }
 
 body{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Noto Sans TC',roboto, sans-serif;
 }
 
-
+h1{
+    font-size: 48px;  
+    line-height: 72px;
+    font-weight: bold;
+}
+h2{
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: bold;
+}
+h3{
+    font-size: 20px;
+    line-height: 30px;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+}
 .container{
-    max-width:1296px ;
+    max-width: 1296px;
     margin: 0 auto;
 }
 
-@media(max-width:768px){
-    .container{
-        max-width:696px;
-        margin: 0 auto;
-    }
-}
-@media(max-width:375px){
-    .container{
-        max-width:348px;
-        margin: 0 auto;
-    }
-}
-
-.nav img{
+.header img{
     width: 80px;
-    margin-top: 12px;
-    margin-bottom: 12px;
 }
-.bg-red{
-    background-color: #AA0601;
+.header ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.header ul li{
+    margin-left: 64px; 
+}
+a {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: normal;
+    color: #fff;
+    text-decoration: none; 
+    
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.footer p{
+    font-family: 16px;
+    line-height: 24px;
 }
 .list{
+    width: 70%;
     display: flex;
+    justify-content: flex-start;
+}
+.list li{
+    margin-right: 48px;   
+    
+}
+.list a {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: normal;
+    color: #fff;
+    text-decoration: none; }
+.flex-end{
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+}
+.flex-end li{
+    margin-left: ;: 32px;
+}
+.flex-end img{
+    width: 48px;
+}
+.bg-red{
+    background: #aa0601;
+}
+.ml-4{
+    margin-left: 32px;
+}
+.mb-4{
+    margin-bottom: 32px;
+}
+.border-top{
+    display: flex;
+    border-top: 1px solid #fff;
+    padding: 32px 0;
+    margin-top: 32px;
+}
+.border-top p{
+    color: #fff;
+    width: 50%;
+}
+.border-top ul{
+    width: 50%;
+}
+.border-top li{
+    margin-left: 48px;
+}
+@media (max-width:992px;) {
+    
+}
+@media (max-width:767px;) {
+    
 }
