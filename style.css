@@ -46,11 +46,18 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+*, *::before, *::after {
+    box-sizing:border-box;
+   }
 
 body{
     font-family: 'Noto Sans TC',roboto, sans-serif;
 }
-
+img {
+    max-width: 100%;
+    vertical-align: middle;
+    hight: auto;
+   }
 h1{
     font-size: 48px;  
     line-height: 72px;
@@ -74,6 +81,7 @@ h3{
 .container{
     max-width: 1296px;
     margin: 0 auto;
+    padding: 0 12px;
 }
 
 .header img{
@@ -225,7 +233,6 @@ a {
     }
     .header ul li{
         border: 1px solid #fff;
-        box-sizing: border-box;
         display: inline-block;
         width: 50%;
         /* padding: auto; */
